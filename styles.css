@@ -50,3 +50,15 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+}
+
