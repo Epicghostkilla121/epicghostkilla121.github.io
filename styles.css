@@ -134,3 +134,11 @@ footer {
     align-items: center;
 }
 
+/* Adjust space between slides */
+.swiper-wrapper {
+    margin: 0 -10px; /* Reduce the margin between slides */
+}
+
+.swiper-slide {
+    margin: 0 10px; /* Adjust the spacing between individual slides */
+}
