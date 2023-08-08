@@ -88,3 +88,21 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+/* ... other styles ... */
+
+.team {
+    background-color: var(--background-color-medium);
+    display: flex;
+    flex-direction: column; /* Change to vertical layout */
+    align-items: flex-start; /* Align items to the left */
+    padding: 2rem;
+}
+
+.person {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 1rem; /* Add spacing between team members */
+    padding: 1rem;
+}
+
+/* ... other styles ... */
