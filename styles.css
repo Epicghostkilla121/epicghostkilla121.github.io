@@ -116,6 +116,7 @@ footer {
     justify-content: center;
     gap: 5px; /* Add spacing between game cards */
     flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    max-width: 460px;
 }
 
 .game-card {
