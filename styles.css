@@ -113,16 +113,37 @@ footer {
 
 .games-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .game-card {
+    flex: 0 0 calc(50% - 20px);
     background-color: white;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; /* Adding transition for smooth effect */
+}
+
+.game-card .description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.game-card .read-more {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.game-card .read-more::before {
+    content: "Read More";
+}
+
+.game-card .expanded {
+    max-height: 1000px; /* Adjust to a larger value for full expansion */
+    transition: max-height 0.5s ease-in-out;
 }
 
 /* Apply expansion effect on hover */
