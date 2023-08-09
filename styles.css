@@ -122,21 +122,6 @@ footer {
     height: auto;
 }
 
-/* Adjust the swiper container to prevent scrolling */
-.swiper-container {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-/* Ensure slides are centered within the swiper container */
-.swiper-wrapper {
-    display: flex;
-    align-items: center;
-}
-
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -144,17 +129,25 @@ footer {
     margin: 0 10px; /* Adjust the spacing between individual slides */
 }
 
-/* Apply pseudo-3D rotation to game cards */
+/* Apply 3D card flip effect */
 .game-card {
-    position: relative;
     width: 280px; /* Adjust the width as needed */
     height: 380px; /* Adjust the height as needed */
-    transform-style: preserve-3d;
-    transform: perspective(1000px) rotateY(0deg); /* Initial rotation angle */
-    transition: transform 0.3s;
+    perspective: 1000px;
 }
 
-/* Apply rotation on hover */
-.games .swiper-slide:hover .game-card {
-    transform: perspective(1000px) rotateY(180deg); /* Rotate to the back face */
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
 }
