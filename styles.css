@@ -111,6 +111,11 @@ footer {
     padding: 2rem;
 }
 
+.games-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .game-card {
     background-color: white;
     padding: 1rem;
@@ -129,43 +134,4 @@ footer {
 .game-card img {
     max-width: 100%;
     height: auto;
-}
-
-.swiper-container {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0px; /* Adjust the spacing between individual slides */
-}
-
-/* Adjust the swiper container to prevent scrolling */
-.swiper-container {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-/* Ensure slides are centered within the swiper container */
-.swiper-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensure each slide takes the full width of the swiper container */
-    max-width: 100%; /* Set the maximum width to prevent overflow */
-    flex-shrink: 0; /* Prevent shrinking of slides */
-    box-sizing: border-box; /* Include padding and border in the width */
-    padding: 0 10px; /* Add padding to the sides of each slide */
 }
