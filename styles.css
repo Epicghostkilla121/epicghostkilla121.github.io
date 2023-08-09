@@ -154,7 +154,6 @@ footer {
     max-height: 100%; /* Allow full expansion */
     overflow-y: auto; /* Add vertical scrollbar */
     padding: 10px; /* Add padding for scroll area */
-    transition: max-height 0.5s ease-in-out;
 }
 
 .game-card .read-more {
