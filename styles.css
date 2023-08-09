@@ -146,4 +146,10 @@ footer {
     flex-shrink: 0; /* Prevent shrinking of slides */
     box-sizing: border-box; /* Include padding and border in the width */
     padding: 0 10px; /* Add padding to the sides of each slide */
+    margin: 0 10px; /* Adjust the spacing between individual slides */
+}
+
+/* Add custom margin to create a gap */
+.games .swiper-slide {
+    margin: 0 20px; /* Add a 20px gap between slides */
 }
