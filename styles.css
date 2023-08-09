@@ -128,6 +128,7 @@ footer {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s, flex 0.3s; /* Adding transitions for smooth effect */
+    position: relative;
     width: 220px;
     height: 300px;
 }
@@ -135,16 +136,24 @@ footer {
 /* Name and description display on hover */
 .game-card:hover .game-info {
     opacity: 1; /* Show the name and description */
+    max-height: 100%;
 }
 
 .game-info {
+    max-height: 100%;
     opacity: 0; /* Hide initially */
     transition: opacity 0.3s ease-in-out; /* Adding transition */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .game-card .description {
-    max-height: 0;
-    overflow: hidden;
+    max-height: 100%; /* Allow full expansion */
+    overflow-y: auto; /* Add vertical scrollbar */
+    padding: 10px; /* Add padding for scroll area */
     transition: max-height 0.5s ease-in-out;
 }
 
