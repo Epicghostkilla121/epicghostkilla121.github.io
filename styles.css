@@ -126,6 +126,10 @@ footer {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s, flex 0.3s; /* Adding transitions for smooth effect */
+
+    /* Adjust the height and width of the game card */
+    width: 220px;
+    height: 300px;
 }
 
 /* Name and description display on hover */
