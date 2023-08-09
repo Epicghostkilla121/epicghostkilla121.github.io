@@ -121,15 +121,13 @@ footer {
 }
 
 .game-card {
-    flex: 0 0 calc(33.33% - 5px); /* One-third width with spacing */
+    flex: 0 0 calc(50% - 5px); /* half width with spacing */
     background-color: white;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s, flex 0.3s; /* Adding transitions for smooth effect */
-
-    /* Adjust the height and width of the game card */
     width: 220px;
     height: 300px;
 }
