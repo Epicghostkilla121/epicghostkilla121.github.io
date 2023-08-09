@@ -134,7 +134,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5px; /* Adjust the spacing between individual slides */
+    margin: 0 0px; /* Adjust the spacing between individual slides */
 }
 
 /* Adjust the swiper container to prevent scrolling */
