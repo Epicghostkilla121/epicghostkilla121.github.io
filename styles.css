@@ -147,12 +147,3 @@ footer {
     box-sizing: border-box; /* Include padding and border in the width */
     padding: 0 10px; /* Add padding to the sides of each slide */
 }
-
-@media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
